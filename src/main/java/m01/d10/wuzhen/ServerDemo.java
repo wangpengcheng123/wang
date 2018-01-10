@@ -11,9 +11,10 @@ package m01.d10.wuzhen;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-
 import java.net.ServerSocket;
 import java.net.Socket;
+
+import org.apache.log4j.Logger;
 
 
 /**
@@ -25,7 +26,7 @@ import java.net.Socket;
  * @see
  */
 public class ServerDemo {
-
+    private final static Logger LOG = Logger.getLogger(ServerDemo.class);
     public static void main(String[] args) {
 
         /**
@@ -48,7 +49,7 @@ public class ServerDemo {
             }
             byte[] byteArray = baos.toByteArray();
             String str = new String(byteArray);
-            System.out.println(str);
+            LOG.info(str);
 
         } catch (IOException e) {
 
