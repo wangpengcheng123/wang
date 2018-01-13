@@ -100,7 +100,7 @@ public class Test {
         Buyer buyer = new Buyer("汪鹏程");
         Buyer buyer1 = new Buyer("叶新童");
         Buyer buyer2 = new Buyer("黄磊");
-        Box box = new Box(100);
+        Box box = new Box(10);
         Ticket ticket = new Ticket(buyer, box);
         ticket.start();
         Ticket ticket1 = new Ticket(buyer1, box);
