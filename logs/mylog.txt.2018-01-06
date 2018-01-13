@@ -1,0 +1,434 @@
+2018-01-06 14:15:08 [ main:0 ] - [ INFO ] [黄磊, 黄磊, 李林, 叶新童, 吴诊, 黄金, 汪鹏程]
+2018-01-06 14:15:08 [ main:4 ] - [ INFO ] [黄磊, 李林, 叶新童, 吴诊, 黄金, 汪鹏程]
+2018-01-06 14:20:06 [ main:1 ] - [ INFO ] [黄磊, 黄磊, 李林, 叶新童, 吴诊, 黄金, 汪鹏程]
+2018-01-06 14:20:06 [ main:1 ] - [ INFO ] [黄磊, 李林, 叶新童, 吴诊, 黄金, 汪鹏程]
+2018-01-06 14:25:50 [ main:0 ] - [ INFO ] [黄磊, 黄磊, 李林, 叶新童]
+2018-01-06 14:25:50 [ main:1 ] - [ INFO ] [黄磊, 李林, 叶新童]
+2018-01-06 14:26:54 [ main:0 ] - [ INFO ] 删除前：[黄磊, 黄磊, 李林, 叶新童]
+2018-01-06 14:26:54 [ main:1 ] - [ INFO ] 删除后：[黄磊, 李林, 叶新童]
+2018-01-06 14:37:31 [ main:0 ] - [ INFO ] 删除前：[黄磊, 黄磊, 李林, 叶新童]
+2018-01-06 14:37:31 [ main:1 ] - [ INFO ] 删除后：[黄磊, 李林, 叶新童]
+2018-01-06 14:37:31 [ main:1 ] - [ INFO ] [黄磊, 叶新童]
+2018-01-06 14:37:55 [ main:0 ] - [ INFO ] 删除前：[黄磊, 黄磊, 李林, 叶新童]
+2018-01-06 14:37:55 [ main:2 ] - [ INFO ] [黄磊]
+2018-01-06 14:37:55 [ main:2 ] - [ INFO ] [黄磊]
+2018-01-06 14:37:55 [ main:3 ] - [ INFO ] [黄磊, 叶新童]
+2018-01-06 14:37:55 [ main:3 ] - [ INFO ] 删除后：[黄磊, 李林, 叶新童]
+2018-01-06 14:38:38 [ main:0 ] - [ INFO ] 删除前：[黄磊, 黄磊, 李林, 叶新童]
+2018-01-06 14:38:38 [ main:1 ] - [ INFO ] [黄磊]
+2018-01-06 14:38:38 [ main:2 ] - [ INFO ] 删除后：[黄磊, 李林, 叶新童]
+2018-01-06 14:38:55 [ main:0 ] - [ INFO ] 删除前：[黄磊, 黄磊, 李林, 叶新童]
+2018-01-06 14:38:55 [ main:2 ] - [ INFO ] 1
+2018-01-06 14:38:55 [ main:2 ] - [ INFO ] 删除后：[黄磊, 李林, 叶新童]
+2018-01-06 14:39:31 [ main:0 ] - [ INFO ] 删除前：[黄磊, 黄磊, 李林, 叶新童]
+2018-01-06 14:39:31 [ main:1 ] - [ INFO ] 1
+2018-01-06 14:39:31 [ main:2 ] - [ INFO ] [黄磊]
+2018-01-06 14:39:31 [ main:2 ] - [ INFO ] 删除后：[黄磊, 李林, 叶新童]
+2018-01-06 16:20:14 [ main:3 ] - [ INFO ] fnff
+java.io.FileNotFoundException: D:.txt (文件名、目录名或卷标语法不正确。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at m01.d06.huanglei.Hw20180106.main(Hw20180106.java:36)
+2018-01-06 16:24:56 [ main:4 ] - [ INFO ] fnff
+java.io.FileNotFoundException: D:.txt (文件名、目录名或卷标语法不正确。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at m01.d06.huanglei.Hw20180106.main(Hw20180106.java:36)
+2018-01-06 16:25:19 [ main:2 ] - [ INFO ] fnff
+java.io.FileNotFoundException: D:\2.txt (系统找不到指定的文件。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at m01.d06.huanglei.Hw20180106.main(Hw20180106.java:36)
+2018-01-06 16:25:46 [ main:2 ] - [ INFO ] fnff
+java.io.FileNotFoundException: D:.txt (文件名、目录名或卷标语法不正确。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at m01.d06.huanglei.Hw20180106.main(Hw20180106.java:36)
+2018-01-06 16:28:11 [ main:1 ] - [ INFO ] fnff
+java.io.FileNotFoundException: D:\eclipse\eclipse1\kaoshi\src\kaoshi\TestThree (系统找不到指定的文件。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at m01.d06.huanglei.Hw20180106.main(Hw20180106.java:36)
+2018-01-06 16:28:28 [ main:0 ] - [ INFO ] /**
+ * Project Name:kaoshi
+ * File Name:TestThree.java
+ * Package Name:kaoshi
+ * Date:2017��12��28������10:38:05
+ * Copyright (c) 2017, bluemobi All Rights Reserved.
+ */
+
+package kaoshi;
+/**
+ * Description:   <br/>
+ * Date:     2017��12��28�� ����10:38:05 <br/>
+ * @author   huanglei
+ * @version
+ * @see
+ */
+/**��Ŀ�����ӳ������⣺���ӵ�һ��ժ�����ɸ����ӣ���������һ�룬����񫣬�ֶ����һ�� 
+ * �ڶ��������ֽ�ʣ�µ����ӳԵ�һ�룬�ֶ����һ�����Ժ�ÿ������
+ * ������ǰһ��ʣ�� ��һ����һ��������10���������ٳ�ʱ����ֻʣ��һ�������ˡ�
+ * ���һ�칲ժ�˶��١�**/
+public class TestThree {
+
+    public static void main(String[] args) {
+          int taozi1;
+          int taozi2=1;
+          for(int i=1;i<10;i++){
+            taozi1=(taozi2+1)*2;
+            taozi2=taozi1;}
+            System.out.println("��һ��һ��ժ�ˣ�"+taozi2);
+          
+        
+
+    }
+
+}
+
+2018-01-06 16:29:44 [ main:0 ] - [ INFO ] /**
+ * Project Name:kaoshi
+ * File Name:TestThree.java
+ * Package Name:kaoshi
+ * Date:2017��12��28������10:38:05
+ * Copyright (c) 2017, bluemobi All Rights Reserved.
+ */
+
+package kaoshi;
+/**
+ * Description:   <br/>
+ * Date:     2017��12��28�� ����10:38:05 <br/>
+ * @author   huanglei
+ * @version
+ * @see
+ */
+/**��Ŀ�����ӳ������⣺���ӵ�һ��ժ�����ɸ����ӣ���������һ�룬����񫣬�ֶ����һ�� 
+ * �ڶ��������ֽ�ʣ�µ����ӳԵ�һ�룬�ֶ����һ�����Ժ�ÿ������
+ * ������ǰһ��ʣ�� ��һ����һ��������10���������ٳ�ʱ����ֻʣ��һ�������ˡ�
+ * ���һ�칲ժ�˶��١�**/
+public class TestThree {
+
+    public static void main(String[] args) {
+          int taozi1;
+          int taozi2=1;
+          for(int i=1;i<10;i++){
+            taozi1=(taozi2+1)*2;
+            taozi2=taozi1;}
+            System.out.println("��һ��һ��ժ�ˣ�"+taozi2);
+          
+        
+
+    }
+
+}
+
+2018-01-06 16:31:46 [ main:0 ] - [ INFO ] /**
+ * Project Name:kaoshi
+ * File Name:TestThree.java
+ * Package Name:kaoshi
+ * Date:2017��12��28������10:38:05
+ * Copyright (c) 2017, bluemobi All Rights Reserved.
+ */
+
+package kaoshi;
+/**
+ * Description:   <br/>
+ * Date:     2017��12��28�� ����10:38:05 <br/>
+ * @author   huanglei
+ * @version
+ * @see
+ */
+/**��Ŀ�����ӳ������⣺���ӵ�һ��ժ�����ɸ����ӣ���������һ�룬����񫣬�ֶ����һ�� 
+ * �ڶ��������ֽ�ʣ�µ����ӳԵ�һ�룬�ֶ����һ�����Ժ�ÿ������
+ * ������ǰһ��ʣ�� ��һ����һ��������10���������ٳ�ʱ����ֻʣ��һ�������ˡ�
+ * ���һ�칲ժ�˶��١�**/
+public class TestThree {
+
+    public static void main(String[] args) {
+          int taozi1;
+          int taozi2=1;
+          for(int i=1;i<10;i++){
+            taozi1=(taozi2+1)*2;
+            taozi2=taozi1;}
+            System.out.println("��һ��һ��ժ�ˣ�"+taozi2);
+          
+        
+
+    }
+
+}
+
+2018-01-06 16:32:06 [ main:0 ] - [ INFO ] /**
+ * Project Name:kaoshi
+ * File Name:TestThree.java
+ * Package Name:kaoshi
+ * Date:2017��12��28������10:38:05
+ * Copyright (c) 2017, bluemobi All Rights Reserved.
+ */
+
+package kaoshi;
+/**
+ * Description:   <br/>
+ * Date:     2017��12��28�� ����10:38:05 <br/>
+ * @author   huanglei
+ * @version
+ * @see
+ */
+/**��Ŀ�����ӳ������⣺���ӵ�һ��ժ�����ɸ����ӣ���������һ�룬����񫣬�ֶ����һ�� 
+ * �ڶ��������ֽ�ʣ�µ����ӳԵ�һ�룬�ֶ����һ�����Ժ�ÿ������
+ * ������ǰһ��ʣ�� ��һ����һ��������10���������ٳ�ʱ����ֻʣ��һ�������ˡ�
+ * ���һ�칲ժ�˶��١�**/
+public class TestThree {
+
+    public static void main(String[] args) {
+          int taozi1;
+          int taozi2=1;
+          for(int i=1;i<10;i++){
+            taozi1=(taozi2+1)*2;
+            taozi2=taozi1;}
+            System.out.println("��һ��һ��ժ�ˣ�"+taozi2);
+          
+        
+
+    }
+
+}
+
+2018-01-06 16:32:28 [ main:0 ] - [ INFO ] /**
+ * Project Name:kaoshi
+ * File Name:TestThree.java
+ * Package Name:kaoshi
+ * Date:2017��12��28������10:38:05
+ * Copyright (c) 2017, bluemobi All Rights Reserved.
+ */
+
+package kaoshi;
+/**
+ * Description:   <br/>
+ * Date:     2017��12��28�� ����10:38:05 <br/>
+ * @author   huanglei
+ * @version
+ * @see
+ */
+/**��Ŀ�����ӳ������⣺���ӵ�һ��ժ�����ɸ����ӣ���������һ�룬����񫣬�ֶ����һ�� 
+ * �ڶ��������ֽ�ʣ�µ����ӳԵ�һ�룬�ֶ����һ�����Ժ�ÿ������
+ * ������ǰһ��ʣ�� ��һ����һ��������10���������ٳ�ʱ����ֻʣ��һ�������ˡ�
+ * ���һ�칲ժ�˶��١�**/
+public class TestThree {
+
+    public static void main(String[] args) {
+          int taozi1;
+          int taozi2=1;
+          for(int i=1;i<10;i++){
+            taozi1=(taozi2+1)*2;
+            taozi2=taozi1;}
+            System.out.println("��һ��һ��ժ�ˣ�"+taozi2);
+          
+        
+
+    }
+
+}
+
+2018-01-06 16:33:02 [ main:0 ] - [ INFO ] /**
+ * Project Name:kaoshi
+ * File Name:TestThree.java
+ * Package Name:kaoshi
+ * Date:2017��12��28������10:38:05
+ * Copyright (c) 2017, bluemobi All Rights Reserved.
+ */
+
+package kaoshi;
+/**
+ * Description:   <br/>
+ * Date:     2017��12��28�� ����10:38:05 <br/>
+ * @author   huanglei
+ * @version
+ * @see
+ */
+/**��Ŀ�����ӳ������⣺���ӵ�һ��ժ�����ɸ����ӣ���������һ�룬����񫣬�ֶ����һ�� 
+ * �ڶ��������ֽ�ʣ�µ����ӳԵ�һ�룬�ֶ����һ�����Ժ�ÿ������
+ * ������ǰһ��ʣ�� ��һ����һ��������10���������ٳ�ʱ����ֻʣ��һ�������ˡ�
+ * ���һ�칲ժ�˶��١�**/
+public class TestThree {
+
+    public static void main(String[] args) {
+          int taozi1;
+          int taozi2=1;
+          for(int i=1;i<10;i++){
+            taozi1=(taozi2+1)*2;
+            taozi2=taozi1;}
+            System.out.println("��һ��һ��ժ�ˣ�"+taozi2);
+          
+        
+
+    }
+
+}
+
+2018-01-06 18:27:14 [ main:0 ] - [ INFO ] /**
+ * Project Name:kaoshi
+ * File Name:TestThree.java
+ * Package Name:kaoshi
+ * Date:2017��12��28������10:38:05
+ * Copyright (c) 2017, bluemobi All Rights Reserved.
+ */
+
+package kaoshi;
+/**
+ * Description:   <br/>
+ * Date:     2017��12��28�� ����10:38:05 <br/>
+ * @author   huanglei
+ * @version
+ * @see
+ */
+/**��Ŀ�����ӳ������⣺���ӵ�һ��ժ�����ɸ����ӣ���������һ�룬����񫣬�ֶ����һ�� 
+ * �ڶ��������ֽ�ʣ�µ����ӳԵ�һ�룬�ֶ����һ�����Ժ�ÿ������
+ * ������ǰһ��ʣ�� ��һ����һ��������10���������ٳ�ʱ����ֻʣ��һ�������ˡ�
+ * ���һ�칲ժ�˶��١�**/
+public class TestThree {
+
+    public static void main(String[] args) {
+          int taozi1;
+          int taozi2=1;
+          for(int i=1;i<10;i++){
+            taozi1=(taozi2+1)*2;
+            taozi2=taozi1;}
+            System.out.println("��һ��һ��ժ�ˣ�"+taozi2);
+          
+        
+
+    }
+
+}
+
+2018-01-06 18:29:16 [ main:0 ] - [ INFO ] public class Test {
+
+    public static void main(String[] args) {
+
+        //  Auto-generated method stub
+
+    }
+
+}
+2018-01-06 18:30:29 [ main:0 ] - [ INFO ] 
+
+    public static void main(String[] args) 
+
+        
+2018-01-06 18:43:13 [ main:0 ] - [ INFO ] 
+
+    public static void main(String[] args) 
+
+        
+2018-01-06 18:51:21 [ main:1 ] - [ INFO ]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+2018-01-06 18:52:29 [ main:0 ] - [ INFO ] 
+
+    public static void main(String[] args) 
+
+        
+2018-01-06 18:53:11 [ main:0 ] - [ INFO ] 
+
+    public static void main(String[] args) 
+
+        
+2018-01-06 19:02:29 [ main:0 ] - [ INFO ]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+2018-01-06 19:11:47 [ main:0 ] - [ INFO ]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+2018-01-06 19:12:48 [ main:0 ] - [ INFO ] ���ʵ���ļ��Ŀ�������
+2018-01-06 19:13:15 [ main:0 ] - [ INFO ] ���ʵ���ļ��Ŀ�������
+2018-01-06 19:27:32 [ main:0 ] - [ INFO ] ���ʵ���ļ��Ŀ�������
+2018-01-06 19:29:00 [ main:0 ] - [ INFO ] public final static Logger LOG = Logger.getLogger(Hw20180106.class);
+2018-01-06 19:30:21 [ main:0 ] - [ INFO ] public final static Logger LOG = Logger.getLogger(Hw20180106.class);
+2018-01-06 19:30:21 [ main:0 ] - [ INFO ] 复制成功！！
+2018-01-06 19:33:20 [ main:0 ] - [ INFO ] public final static Logger LOG = Logger.getLogger(Hw20180106.class);
+2018-01-06 19:33:48 [ main:0 ] - [ INFO ] public final static Logger LOG = Logger.getLogger(Hw20180106.class);
+2018-01-06 19:35:29 [ main:0 ] - [ INFO ] public final static Logger LOG = Logger.getLogger(Hw20180106.class);
+2018-01-06 19:35:29 [ main:0 ] - [ INFO ] public final static Logger LOG = Logger.getLogger(Hw20180106.class);
+2018-01-06 19:35:29 [ main:0 ] - [ INFO ] 复制成功！！
+2018-01-06 19:36:09 [ main:0 ] - [ INFO ] public final static Logger LOG = Logger.getLogger(Hw20180106.class);
+2018-01-06 19:36:09 [ main:0 ] - [ INFO ] public final static Logger LOG = Logger.getLogger(Hw20180106.class);
+2018-01-06 19:36:09 [ main:0 ] - [ INFO ] 复制成功！！
+2018-01-06 19:48:47 [ main:0 ] - [ INFO ] fnff
+java.io.FileNotFoundException: D:\eclipse\TestOne.java (系统找不到指定的文件。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at m01.d06.huanglei.Hw20180106.main(Hw20180106.java:42)
+2018-01-06 19:50:53 [ main:0 ] - [ INFO ] fnff
+java.io.FileNotFoundException: D:\eclipse (拒绝访问。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at m01.d06.huanglei.Hw20180106.main(Hw20180106.java:43)
+2018-01-06 19:51:38 [ main:0 ] - [ INFO ] TestOne.java中的数据为:public final static Logger LOG = Logger.getLogger(Hw20180106.class);
+2018-01-06 19:51:38 [ main:0 ] - [ INFO ] 复制成功！！
+2018-01-06 19:51:38 [ main:0 ] - [ INFO ] TestTwo.java中的数据为:public final static Logger LOG = Logger.getLogger(Hw20180106.class);
+2018-01-06 19:53:48 [ main:0 ] - [ INFO ] TestOne.java中的数据为:public final static Logger LOG = Logger.getLogger(Hw20180106.class);
+2018-01-06 19:53:48 [ main:0 ] - [ INFO ] 复制成功！！
+2018-01-06 19:53:48 [ main:0 ] - [ INFO ] TestTwo.java中的数据为:public final static Logger LOG = Logger.getLogger(Hw20180106.class);
+2018-01-06 19:56:13 [ main:0 ] - [ INFO ] fnff
+java.io.FileNotFoundException: D:\eclipse\eclipse1\kaoshi\src\kaoshi (拒绝访问。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at m01.d06.huanglei.Hw20180106_1.main(Hw20180106_1.java:36)
+2018-01-06 23:19:55 [ main:5 ] - [ INFO ] fnff
+java.io.FileNotFoundException: D:\eclipse\eclipse1\kaoshi\src\kaoshi (拒绝访问。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at m01.d06.huanglei.Hw20180106_1.main(Hw20180106_1.java:36)
+2018-01-06 23:24:59 [ main:0 ] - [ INFO ] 0
+2018-01-06 23:24:59 [ main:1 ] - [ INFO ] 1
+2018-01-06 23:24:59 [ main:1 ] - [ INFO ] 2
+2018-01-06 23:24:59 [ main:1 ] - [ INFO ] 3
+2018-01-06 23:25:22 [ main:0 ] - [ INFO ] [Ljava.lang.String;@1d650b0e
+2018-01-06 23:25:22 [ main:2 ] - [ INFO ] [Ljava.lang.String;@1d650b0e
+2018-01-06 23:25:22 [ main:2 ] - [ INFO ] [Ljava.lang.String;@1d650b0e
+2018-01-06 23:25:22 [ main:2 ] - [ INFO ] [Ljava.lang.String;@1d650b0e
+2018-01-06 23:26:55 [ main:0 ] - [ INFO ] TeseOne.java
+2018-01-06 23:26:55 [ main:1 ] - [ INFO ] TestOne.java
+2018-01-06 23:26:55 [ main:1 ] - [ INFO ] TestThree.java
+2018-01-06 23:26:55 [ main:1 ] - [ INFO ] TestTwo.java
+2018-01-06 23:28:50 [ main:0 ] - [ INFO ] [Ljava.lang.String;@b4bbd50
+2018-01-06 23:28:50 [ main:1 ] - [ INFO ] [Ljava.lang.String;@b4bbd50
+2018-01-06 23:28:50 [ main:1 ] - [ INFO ] [Ljava.lang.String;@b4bbd50
+2018-01-06 23:28:50 [ main:1 ] - [ INFO ] [Ljava.lang.String;@b4bbd50
+2018-01-06 23:44:40 [ main:1 ] - [ INFO ] TeseOne.java
+2018-01-06 23:44:40 [ main:1 ] - [ INFO ] TeseOne.java
+2018-01-06 23:44:40 [ main:1 ] - [ INFO ] TeseOne.java
+2018-01-06 23:44:40 [ main:1 ] - [ INFO ] TeseOne.java
+2018-01-06 23:44:40 [ main:2 ] - [ INFO ] TestOne.java
+2018-01-06 23:44:40 [ main:2 ] - [ INFO ] TestOne.java
+2018-01-06 23:44:40 [ main:2 ] - [ INFO ] TestOne.java
+2018-01-06 23:44:40 [ main:2 ] - [ INFO ] TestOne.java
+2018-01-06 23:44:40 [ main:2 ] - [ INFO ] TestThree.java
+2018-01-06 23:44:40 [ main:2 ] - [ INFO ] TestThree.java
+2018-01-06 23:44:40 [ main:2 ] - [ INFO ] TestThree.java
+2018-01-06 23:44:40 [ main:2 ] - [ INFO ] TestThree.java
+2018-01-06 23:44:40 [ main:2 ] - [ INFO ] TestTwo.java
+2018-01-06 23:44:40 [ main:3 ] - [ INFO ] TestTwo.java
+2018-01-06 23:44:40 [ main:3 ] - [ INFO ] TestTwo.java
+2018-01-06 23:44:40 [ main:3 ] - [ INFO ] TestTwo.java
+2018-01-06 23:51:54 [ main:0 ] - [ INFO ] TeseOne.java
+2018-01-06 23:51:54 [ main:0 ] - [ INFO ] TestOne.java
+2018-01-06 23:51:54 [ main:0 ] - [ INFO ] TestThree.java
+2018-01-06 23:51:54 [ main:1 ] - [ INFO ] TestTwo.java
+2018-01-06 23:53:00 [ main:0 ] - [ INFO ] []
+2018-01-06 23:53:00 [ main:1 ] - [ INFO ] []
+2018-01-06 23:53:00 [ main:2 ] - [ INFO ] []
+2018-01-06 23:53:00 [ main:2 ] - [ INFO ] []
+2018-01-06 23:53:21 [ main:0 ] - [ INFO ] [Ljava.lang.String;@54b8d335
+2018-01-06 23:53:21 [ main:25 ] - [ INFO ] [Ljava.lang.String;@54b8d335
+2018-01-06 23:53:21 [ main:26 ] - [ INFO ] [Ljava.lang.String;@54b8d335
+2018-01-06 23:53:21 [ main:26 ] - [ INFO ] [Ljava.lang.String;@54b8d335
+2018-01-06 23:53:44 [ main:0 ] - [ INFO ] TeseOne.java
+2018-01-06 23:53:44 [ main:16 ] - [ INFO ] TeseOne.java
+2018-01-06 23:53:44 [ main:16 ] - [ INFO ] TeseOne.java
+2018-01-06 23:53:44 [ main:16 ] - [ INFO ] TeseOne.java
+2018-01-06 23:54:13 [ main:0 ] - [ INFO ] TeseOne.java
+2018-01-06 23:55:14 [ main:0 ] - [ INFO ] TeseOne.java
+2018-01-06 23:55:41 [ main:0 ] - [ INFO ] TeseOne.java
+2018-01-06 23:55:41 [ main:0 ] - [ INFO ] TestOne.java
+2018-01-06 23:55:41 [ main:0 ] - [ INFO ] TestThree.java
+2018-01-06 23:55:41 [ main:1 ] - [ INFO ] TestTwo.java
+2018-01-06 23:57:13 [ main:0 ] - [ INFO ] TeseOne.java
+2018-01-06 23:57:13 [ main:1 ] - [ INFO ] TestOne.java
+2018-01-06 23:57:13 [ main:1 ] - [ INFO ] TestThree.java
+2018-01-06 23:57:13 [ main:2 ] - [ INFO ] TestTwo.java
