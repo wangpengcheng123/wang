@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>form test</title>
+<style type="text/css">
+.main {
+	background-color: #eb5145;
+	width: 400px;
+	height: 400px;
+}
+
+.top {
+	width: 600px;
+	height: 120px;
+	float: left;
+}
+[href] {
+	color: #fdfbfb;
+}
+[href]:hover {
+	background-color: #00ff66;
+}
+.topright {
+	width: 300px;
+	height: 80px;
+	background-color: #eb5145;
+	float: left;
+}
+
+.topleft {
+	width: 300px;
+	height: 80px;
+	background-color: #bb3627;
+	float: left;
+}
+
+.but {
+	width: 600px;
+	height: 600px;
+	background-color: #eb5145;
+}
+a {
+	text-decoration: none;
+}
+.classa{
+color:#fdfbfb;
+font-weight:bold;}
+
+
+</style>
+</head>
+<body>
+
+	<div class="mainBoss" align="center">
+		<div class="main">
+			<div class="top" align="center">
+				<div class="topright">
+					<p>
+						<b><a
+							href="D:\git\huangleia\src\main\java\hl20180113\BiaoDan.html"">用户注册</a></b>
+					</p>
+				</div>
+				<div class="topleft">
+					<p>
+						<b><a
+							href="D:\git\huangleia\src\main\java\hl20180113\BiaoDan1.html"">表格信息</a></b>
+					</p>
+				</div>
+			</div>
+			<div class="but">
+				
+					<table width="80%" align="center" cellpadding="5px">
+						<!--align="center" 整个表格居中-->
+						<tr align="center">
+							<!--align="center" 内容居中-->
+							<td class="classa" width="30%">姓名：</td>
+							<td><input type="text" name="uname" id="uname"
+								onchange="return checkUName()" /> <span id="uNameSpan"></span></td>
+						</tr>
+
+						<tr align="center">
+							<td class="classa">密码:</td>
+							<td><input type="password" name="pwd" id="pwd"
+								onchange="return checkPwd()" /> <span id="pwdSpan"></span></td>
+						</tr>
+
+						<tr align="center">
+							<td class="classa" font-color="red">确认密码：</td>
+							<td><input  /> <span id="pwd2Span"></span></td>
+						</tr>
+
+
+
+						<tr align="center">
+							<td class="classa" >性别：</td>
+							<td class="classa"><input type="radio"  />男
+								<input type="radio" />女</td>
+						</tr>
+
+						<tr align="center">
+							<td class="classa">爱好：</td>
+							<td class="classa"><input type="checkbox" />吃饭
+								<input type="checkbox"  />玩耍
+								<input type="checkbox">休息</td>
+						</tr>
+
+						<tr align="center">
+							<td class="classa">城市：</td>
+							<td class="classa"><select name="city" id="city">
+									<option value="">请选择</option>
+									<option value="bj">北京</option>
+									<option value="sz">深圳</option>
+									<option value="gz">广州</option>
+							</select></td>
+						</tr>
+
+						<tr align="center">
+							<td class="classa">自我介绍：</td>
+							<td><textarea id="myInfo" name="myInfo" rows="5" cols="20">属于你个人的介绍，请填写</textarea>
+							</td>
+						</tr>
+
+						<tr align="center">
+							<td colspan="2"><input type="submit" value="立即注册"/></td>
+						</tr>
+
+					</table>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
