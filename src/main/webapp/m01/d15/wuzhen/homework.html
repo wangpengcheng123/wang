@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>作业</title>
+		<style>
+			div{
+				background-color: chocolate;
+			}
+		</style>
+	</head>
+	<body>
+		<div>&nbsp;</div>
+		<dl>
+			<dt><font size="5"><b>一、传输协议：</b></font></dt>
+			<dd>UDP:</dd>
+			<!--分类定义，有序列表，无序列表-->
+			<ol>
+				<li>将数据及源和目的封装成数据包，不需要建立连接</li>
+				<li>每个数据包的大小在64k以内</li>
+				<li>因无连接，是不可靠协议</li>
+				<li>不需要建立连接，速度快</li>
+			</ol>
+			<dd>TCP:</dd>
+			<ul>
+				<li>建立连接，形成传输数据的通道</li>					
+				<li>在连接中进行大数据的传输</li>
+				<li>通过三次握手完成连接，可靠协议</li>
+				<li>必须建立连接，效率会稍低</li>
+			</ul>
+		</dl>
+		<div>&nbsp;</div>
+		<table border="4" bordercolor="green" cellspacing="0" cellpadding="20" align="center"  width="600">	
+			<caption><font size="7"><b>座位分布图</b></font></caption>
+			<tr>		
+				<th bgcolor="aqua" ><font size="6">讲台</font></th>
+				<th bgcolor="#CCCCCC" colspan="2" ><font size="6">屏幕</font></th>
+				<th bgcolor="yellow" rowspan="2">组长：高世庆</th>
+			
+			</tr>
+			<tr>
+				<th bgcolor="chartreuse">组长：刘涛</th>
+				<th bgcolor="chocolate" colspan="2">组长：徐超</th>				
+			</tr>
+			<tr height="10">
+				<th bgcolor="cornflowerblue" colspan="2">组长：汪鹏程</th>
+				<th bgcolor="blueviolet" colspan="2">组长：孙浩</th>
+			</tr>	
+		    </table><br />
+			<div>&nbsp;</div>
+			<marquee direction="left" behavior="slide">请欣赏音乐：Faded</marquee>
+			<audio controls>
+				<source src="Faded.mp3"/>
+			</audio>
+			<!-- 音频只能在网页打开 -->
+	</body>
+</html>
