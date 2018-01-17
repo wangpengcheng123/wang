@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>注册页面</title>
+		<style type="text/css">
+			input:focus{
+				background-color: bisque;
+			}
+			span{				
+				color: red;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<form action="#" method="get">
+			<table border="1" cellpadding="10" cellspacing="0" width="600px" bgcolor="bisque">
+				<tbody align="middle">
+				<tr>
+					<th colspan="2"><font size="6">注册页面</font></th>					
+				</tr>
+				<tr>
+					<td>姓名：</td>
+					<td><input type="text" name="user"  value="wuzhen" readonly/ ><span> *</span></td><br />
+				</tr>
+				<tr>
+					<td>密码：</td>
+					<td><input type="password" name="password" required pattern="[\dA-Za-z]{4,8}" placeholder="请输入4~8个字符"/><span> *</span></td>
+				</tr>
+				<tr>
+					<td>确认密码：</td>
+					<td><input type="password" name="confirm" required/><span> *</span></td>
+				</tr>
+				<tr>
+					<td>性别：</td>
+					<td>						
+						<input type="radio" name="sex" value="nan" id="nan"/><label for="nan">男</label>						
+					    <input type="radio" name="sex" value="nv" id="nv" checked/ ><label for="nv">女</label>
+					</td>
+				</tr>
+				<tr>
+					<td>出生年月日：</td>
+					<td>						
+						<input type="date" name="date" value="2017-01-17"/>									
+					</td>
+				</tr>
+				<tr>
+					<td>邮箱：</td>
+					<td><input type="email" name="email" placeholder="请输入你的邮箱"/></td>
+				</tr>				
+				<tr>
+					<td>爱好：</td>
+					<td>						
+						<input type="checkbox" name="hobby" value="sing" id="s"/><label for="s">唱K</label>	
+					    <input type="checkbox" name="hobby" value="reading" id="r"/><label for="r">看书</label>	
+					    <input type="checkbox" name="hobby" value="travel" id="t" checked/><label for="t">旅游</label>	
+					    <input type="checkbox" name="hobby" value="playball" id="p"/><label for="p">打球</label>	
+					</td>
+				</tr>
+				<tr>
+					<td>城市：</td>
+					<td>
+						<select name="city">
+							<option value="none">--请选择--</option>
+							<option value="wh">武汉</option>
+							<option value="hg">黄冈</option>
+							<option value="xn">咸宁</option>
+							<option value="xt">仙桃</option>
+						</select>
+						
+					</td>
+				</tr>
+				<tr height="60px">
+					<td>自我介绍：</td>
+					<td><textarea name="text" cols="20" rows="5">属于你个人的介绍，请填写</textarea></td>
+				</tr>
+				<tr>
+					<th colspan="2">
+						<input type="submit" value="立即注册"/>
+					</th>					
+				</tr>
+				</center>
+				</tbody>
+			</table>
+		</form>
+	</body>
+</html>
