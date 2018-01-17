@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>调查表</title>
+		<style type="text/css">
+		*{
+			margin: 0px auto;
+		}
+			table{
+				width: 500px;
+				height: 590px;
+				background-color: aqua;
+				text-align: center;
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+			<table cellspacing="10px" >
+			<form action="#" method="post">
+		<tr >
+			<td><label for="ne">姓名:</label></td>
+			<td><input type="text" name="username" id="ne" required placeholder="输入必须是2-6个字符"/></td>
+		</tr>	
+		<tr>
+			<td>购买日期:</td>
+			<td>
+				<input type="number" name="nr" min="1970" max="2018" value="" required "/>年
+				<select name="month">
+					<option>01</option>
+					<option>02</option>
+					<option>03</option>
+					<option>04</option>
+					<option>05</option>
+					<option>06</option>
+					<option>07</option>
+					<option>08</option>
+					<option>09</option>
+					<option>10</option>
+					<option>11</option>
+					<option>12</option>
+				</select>月
+			<input type="number" name="nr1" min="1" max="31" value="" required "/>日
+				
+			</td>
+		</tr>		
+		<tr>
+			<td><label for="el">电子邮件地址:</label></td>
+			<td><input type="email" name="email" value="" id="el" required/></td>
+		</tr>		
+		<tr>
+			<td><label for="ph">手机号码:</label></td>
+			<td>
+				<input type="text" name="phone"  id="ph" placeholder="请输入电话号码" size="20" maxlength="11"/>
+			</td>
+		</tr>		
+		<tr>
+			<td>你是否看过我们的在线产品目录？</td>
+			<td>
+				<input type="radio" name="menu" value="是" checked required/>是
+				<input type="radio" name="menu" value="否"  required/>否
+			</td>
+		</tr>		
+		<tr>
+			<td>如果查看过，您对哪些产品有兴趣购买？</td>
+			<td>
+				<input type="checkbox" name="cb" value="" />大屏电视机 
+				<input type="checkbox" name="cb" value="" />音频设备
+				<input type="checkbox" name="cb" value="" />视频设备
+				<input type="checkbox" name="cb" value="" />相机
+				
+				
+			</td>
+		</tr>	
+		<tr>
+			<td><label for="area">在填写订单之前您还有什么问题、意见或建议？</label></td>
+			<td><textarea placeholder="请在这里键入附注" rows="5" cols="20" id="area" name="textarea" value=""></textarea></td>
+		</tr>	
+		
+		<tr>
+			
+			<td colspan="2">
+				<input type="submit" name="submit" value="提交"/>
+				<input type="reset" name="reset" value="重置" disabled/>
+			</td>
+			
+		</tr>	
+		
+		
+		
+		</form>
+		</table>
+	</body>
+</html>

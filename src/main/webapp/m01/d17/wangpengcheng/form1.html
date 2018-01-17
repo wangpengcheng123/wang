@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>申请表</title>
+		<style type="text/css">
+		*{
+			margin: 0px auto;
+		}
+			table{
+				width: 500px;
+				height: 590px;
+				background-color: cornflowerblue;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<table>
+			<form method="post" action="#">
+		<tr>
+			<td><label for="ne">姓名:</label></td>
+			<td><input type="text" name="username" id="ne" required/></td>
+		</tr>	
+		<tr>
+			<td>教育程度:</td>
+			<td>
+				<input type="radio" name="ss" id="ro1" value="硕士" checked required=""/><label for="ro1">硕士</label>
+				<input type="radio" name="ss" id="ro2" value="博士" required=""/><label for="ro2">硕士</label>
+			</td>
+		</tr>		
+		<tr>
+			<td><label for="el">常用邮箱:</label></td>
+			<td><input type="email" name="email" value="" id="el" required/></td>
+		</tr>		
+		<tr>
+			<td>性别:</td>
+			<td>
+				<input type="radio" name="sex" value="男" id="s1" checked required/><label for="s1">男</label>
+				<input type="radio" name="sex" value="女" id="s2" required/><label for="s2">女</label>
+			</td>
+		</tr>		
+		<tr>
+			<td><label for="age1">年龄:</label></td>
+			<td><input type="number" name="age" value="" id="age1" required min="0" max="110"/></td>
+		</tr>		
+		<tr>
+			<td><label for="money1">工资:</label></td>
+			<td><input type="number" name="money" value="" id="money1" required /></td>
+		</tr>	
+		<tr>
+			<td><label for="area">附注:</label></td>
+			<td><textarea placeholder="请在这里键入附注" rows="3" cols="20" id="area" name="textarea" value=""></textarea></td>
+		</tr>	
+		<tr>
+			<td><lable for="cy">国家:</lable></td>
+			<td>
+				<select name="country">
+				<option value="美国">美国</option>
+				<option value="澳大利亚">澳大利亚</option>
+				<option selected value="中国">中国</option>
+				<option value="新加坡">新加坡</option>
+			</select>
+				
+			</td>
+		</tr>	
+		<tr>
+			
+			<td colspan="2"> 
+				<input type="submit" name="submit" value="提交"/>
+				<input type="reset" name="reset" value="重置"/>
+			</td>
+		</tr>	
+		
+		
+		
+		</form>
+		</table>
+	</body>
+</html>
