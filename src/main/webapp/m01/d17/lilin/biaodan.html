@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+
+<body>
+<form action="chenggong.html" target="_blank" method="get">
+<table border="1" width="600" cellpadding="10" cellspacing="0">
+	<tr>
+    	<th colspan="2">注册表单</th>
+    </tr>
+	<tr>
+    	<td>用户名：</td>
+        <td><input type="text" name="user" pattern=	"[-\w\u4E00-\u9FA5]{4,10}" placeholder="输入名要大于4小于10"/ required="required"></td>
+    </tr>
+    <tr>
+    	<td>密码：</td>
+        <td><input type="password" name="pwd" pattern="[\dA-Za-z]{6,16}" placeholder="密码大于6小于16位数" required="required"/></td>
+    </tr>
+    <tr>
+    	<td>确认密码：</td>
+        <td><input type="password" name="pwd1" required="required"/></td>
+    </tr>
+    <tr>
+    	<td>电话号码：</td>
+        <td><input type="tel" pattern="1[3578]\d{9}" placeholder="请输入正确的号码"  required="required"/></td>
+    </tr>
+    <tr>
+    	<td>性别：</td>
+        <td><input type="radio" name="sex" id="nan"/><label for="nan">男</label>
+        	<input type="radio" name="sex" id="nv"/><label for="nv">女</label>
+        </td>
+    </tr>
+    <tr>
+    	<td>爱好：</td>
+        <td><input type="checkbox" name="game" id="g"/><label for="g">电脑游戏</label>
+        	<input type="checkbox" name="book" id="b"/><label for="b">看书</label>
+            <input type="checkbox" name="music" id="m"/><label for="m">听音乐</label>
+        </td>
+    </tr>
+    <tr>
+    	<td>年龄：</td>
+        <td><input type="range"/></td>
+    </tr>
+    <tr>
+    	<td>邮箱：</td>
+        <td><input type="email" name="el" required="required" placeholder="格式：xx@xx"/></td>
+    </tr>
+    <tr>
+    	<td>选择城市：</td>
+        <td>
+        	<select>
+            	<option value="wuhan"/>武汉
+            	<option value="shanghai"/>上海
+            	<option value="beijing" />北京
+            </select>
+        </td>
+    </tr>
+    <tr>
+    	<td>选择文件</td>
+        <td><input type="file" name="file"/></td>
+    </tr>
+    <tr>
+    	<td>出生日期：</td>
+        <td><input type="date" name="time"  required="required"/></td>
+    </tr>
+    <tr>
+    	<td>自我补充：</td>
+        <td><textarea name="text" cols="40" rows="5" placeholder="请在这个输入"></textarea></td>
+    </tr>
+    <tr>
+    	<td colspan="2">
+        <center>
+        <input type="reset" value="重置" />
+        <input type="submit" value="注册"/></center>
+        </td>
+    </tr>
+</table>
+
+</form>
+</body>
+</html>
