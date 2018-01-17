@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格</title>
+    <style type="text/css">
+        * {
+            margin: 0px 0px;
+            padding: 0px 0px;
+        }
+
+        #quanju {
+            margin: auto auto;
+        }
+    </style>
+</head>
+<body>
+<form method="get" enctype="multipart/form-data">
+    <table width="404" height="500" border="1" align="center" style="text-align:center;margin:20px auto">
+        <tr>
+            <td width="129">姓名：</td>
+            <td width="259"><input type="text" name="name" placeholder="请输入姓名" required/></td>
+        </tr>
+        <tr>
+            <td>密码：</td>
+            <td><input type="password" name="password" placeholder="请输入密码" required pattern="[\dA-Za-z]{6,16}"/></td>
+        </tr>
+        <tr>
+            <td>确认密码：</td>
+            <td><input type="password" name="repassword" placeholder="请重新输入密码" required pattern="[\dA-Za-z]{6,16}"/></td>
+        </tr>
+        <tr>
+            <td>邮箱:</td>
+            <td><input type="email" name="emaile" placeholder="请输入你的邮箱" required/></td>
+        </tr>
+        <tr>
+          <td> 头像</td>
+          <td><input type="file" name="file" value=""/></td>
+        </tr>
+        <tr>
+          <td>日期</td>
+          <td><input type="date" name="date" value="2018-01-17"/></td>
+        </tr>
+        <tr>
+            <td>性别：</td>
+            <td><input type="radio" name="sex" id="nan" checked="checked"/><label for="nan">男</label>
+                <input type="radio" name="sex" id="nv"/><label for="nv">女</label>
+            </td>
+        </tr>
+        <tr>
+            <td>爱好：</td>
+            <td><input type="checkbox" name="hobby"/>吃饭
+                <input type="checkbox" name="hobby"/>玩耍
+                <input type="checkbox" name="hobby"/>休息
+            </td>
+        </tr>
+        <tr>
+            <td>城市：</td>
+            <td><select name="city" id="city">
+                <option name="bj" selected="selected">北京</option>
+                <option name="sz">深圳</option>
+                <option name="gz">广州</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td height="93">自我介绍</td>
+            <td><textarea rows="5" cols="20"></textarea>.</td>
+        </tr>
+        /
+        <tr>
+            <td colspan="2" align="center"><input type="submit" value="立即注册"/>
+                <input type="reset" value="重置界面 "/></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
