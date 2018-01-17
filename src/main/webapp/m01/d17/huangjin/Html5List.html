@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>电子产品调查表</title>
+	</head>
+	<body>
+		<h1>American Metric 电子产品调查表</h1>
+		<form method="post" action="">
+			<p>姓名：
+				<input type="text" name="xingmin" placeholder="输入必须是2-6为字符"/>
+			</p>
+			<p>密码：
+				<input type="password" name="password" placeholder="请输入中英文组合12-16位数密码"/>
+			</p>
+			<p>购买日期：
+				<input type="text" name="year" value="yyyy" size="4" maxlength="4"/>年
+				<select name="month">
+					<option value="">月份</option>
+					<option value="1">一月</option>
+					<option value="2">二月</option>
+					<option value="3">三月</option>
+					<option value="4">四月</option>
+					<option value="5">五月</option>
+					<option value="6">六月</option>
+					<option value="7">七月</option>
+					<option value="8">八月</option>
+					<option value="9">九月</option>
+					<option value="10">十月</option>
+					<option value="11">十一月</option>
+					<option value="12">十二月</option>
+				</select>月
+				<input type="text" name="day" value="dd"/>日
+			</p>
+			<p>电子邮件地址：
+				<input type="email" name="email" placeholder="www.baidu.com"/>
+			</p>
+			<p>电话号码：
+				<input type="number" name="num" size="11" placeholder="请输入13/15/18开头的11位数字"/>
+			</p>
+			<p>您是否查看过我们的在线产品目录？
+				<label for="ture">是</label>
+				<input type="radio" name="chioce" id="ture"/>
+				<label for="false">否</label>
+				<input type="radio" name="chioce" id="false"/>
+			</p>
+			<p>如果查看过，您对哪些产品有兴趣购买？(选择提供的产品)<br/>
+				<input type="checkbox" name="something" value="TV"/>大屏幕电视机
+				<input type="checkbox" name="something" value="voice"/>音频设备
+				<input type="checkbox" name="something" value="video"/>视频设备
+				<input type="checkbox" name="something" value="comeria"/>相机
+			</p>
+			<p>在填写订单之前，您还有什么问题、意见或建议？<br/>
+				<textarea name="textarea" col="2" rows="3">
+					您的输入：
+				</textarea>
+			</p>
+			<p>
+				<input type="submit" name="submit" value="提交"/>
+				<input type="reset" name="reset" value="重置" disabled/>
+			</p>
+		</form>
+	</body>
+</html>
