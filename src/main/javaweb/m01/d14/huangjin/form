@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>注册页面</title>
+	</head>
+	<body>
+		<table border="1" cellspacing="0" width="500px">
+			<tbody align="center">
+				<tr>
+					<th colspan="2"><font size="6">注册页面</font></th>
+				</tr>
+				<tr>
+					<td width="100px">姓名:</td>
+					<td width="300px" align="center">
+						<input type="text" name="fname" size=30/>
+					</td>
+				</tr>
+				<tr>
+					<td width="100px">密码:</td>
+					<td width="300px" align="center">
+						<input name="pass" type="password" size=30/>
+					</td>
+				</tr>
+				<tr>
+					<td width="100px">确认密码:</td>
+					<td width="300px" align="center">
+						<input name="password" type="password" size=30/>
+					</td>
+				</tr>
+				<tr>
+					<td width="100px">性别:</td>
+					<td width="300px" align="center">
+						<input name="gender" type="radio">男
+						<input name="gender" type="radio">女
+					</td>
+				</tr>
+				<tr>
+					<td width="100px">邮箱:</td>
+					<td width="300px" align="center">
+						<input name="email" type="text" size=30>
+					</td>
+				</tr>
+				<tr>
+					<td width="100px">爱好:</td>
+					<td width="300px" align="center">
+					<input type="checkbox" name="interest" value="sports">运动
+					<input type="checkbox" name="interest" value="chat">聊天
+					<input type="checkbox" name="interest" value="playgame">玩游戏
+					</td>
+				</tr>
+				<tr>
+					<td width="100px">城市:</td>
+					<td width="300px" align="center">
+						<select name="city">	
+							<option value="">--请选择--</option>
+							<option value="1">麻城</option>
+							<option value="2">黄石</option>
+							<option value="3">武汉</option>
+							<option value="4">深圳</option>
+						</select>
+					</td>
+				</tr>
+						
+				<tr width="10px">
+					<td width="100px">自我介绍:</td>
+					<td width="200px" align="center"4
+						<textarea name="textarea">
+							。。。
+						</textarea>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="submit" value="立即注册"/>
+					
+					</td>
+				</tr>
+		</table>
+	</body>
+</html>	
