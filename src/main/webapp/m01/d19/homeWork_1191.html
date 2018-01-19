@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>图文混排</title>
+		<style type="text/css">
+			*{
+				margin: 0px 0px;
+			}
+			#div1{
+				width: 500px;
+				margin: 0px auto;
+			}
+			.div1{
+				width: 500px;
+				height:80px ;
+				background-color: red;
+				
+			}
+		.div1 h1{
+				text-align: center;
+				line-height: 80px;
+				height:80px;
+				width: 500px;
+				background-color: #0000FF;
+				color: white;
+				
+			}
+			.div2{
+				width: 500px;
+				height: 180px;
+				background-color:#ccccff;
+				
+			}
+			.div2_1{
+				float: left;
+			}
+			img{
+				border: 1px #9999CC dashed;
+				margin: 5px;
+			}
+			
+			.div2 p{
+				text-indent: 2em;
+				font-size: 12px;
+				line-height: 1.5;
+				border-right: red solid 3px;
+			}
+			p+p{
+			border-right:orange double  3px ;	
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="div1">
+			<div class="div1">
+				<h1>互联网发展的起源</h1>
+				
+			</div>
+			<div class="div2">
+				<div class="div2_1">
+					<img src="img/3.jpg" width="150px" height="130px"/>
+				</div>
+				<p >1969年，为了保障通信联络，美国国防部高级研究计划署ARPA
+		资助建立了世界上第一个分组交换试验网ARPANET，连接美国四个大学。ARPANET
+		的建成和不断发展标志着计算机网络发展的新纪元。
+		</p>  
+		<p> 20世纪70年代末到80年代初，计算机网络蓬勃发展，各种各样的计算机网络
+		应运而生，如MILNET、USENET、BITNET、CSNET等，在网络的规模和数量上都得到了很大的发展。一系列网络的建设，产生了不同网络之间互联的需求，并最终导致了TCP/IP
+		协议的诞生。 
+		</p> 
+				
+			</div>
+		</div>
+	</body>
+</html>
