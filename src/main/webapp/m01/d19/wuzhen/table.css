@@ -1,0 +1,14 @@
+table{
+	border-top: 3px solid red;
+	border-bottom: 3px solid red;
+	border-left: 3px solid red;
+	border-right: 3px solid red;
+	width: 500px;
+	border-collapse: collapse;	
+}
+td{
+	border: 1px solid blue;
+	width: 30px;
+	height: 20px;
+}
+.td{border-bottom: 3px solid black;}
