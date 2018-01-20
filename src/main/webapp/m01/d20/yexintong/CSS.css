@@ -1,0 +1,73 @@
+* {
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+#quanju {
+    width: 600px;
+    height: 600px;
+    margin: 0px auto;
+    border: 1px red solid;
+}
+
+#biaoti {
+    width: 600px;
+    height: 100px;
+    background-color: #9999cc;
+    text-align: center;
+}
+
+h1 {
+    color: blue;
+    font-family: 楷体;
+    font-size: 25px;
+    padding: 30px 0px;
+    text-shadow: aqua 5px 5px 3px;
+}
+
+.tupian {
+    width: 298px;
+    height: 200px;
+    float: left;
+}
+
+.jianju {
+    height: 200px;
+    border-right: 4px solid red;
+    margin: 0px 0px;
+    float:left;
+}
+
+img {
+    width: 298px;
+    height: 200px;
+}
+.jianjie{
+    width: 300px;
+    height:20px;
+    float:left;
+    background-color: #ccccff;
+}
+.jianjie p{
+    font-size:10px;
+    text-align: center;
+    margin: 2px 0px;
+}
+.jianjie p span{
+    color:red;
+}
+.neirong{
+    clear: left;
+    width:600px;
+    height:280px;
+    background-color: #66ccff;
+}
+.neirong p{
+    text-indent: 2em;
+    font-size:10px;
+    line-height: 28px;
+    background-image: url("2018-01-20_145752.jpg");
+    background-repeat:repeat-x;
+    background-size:auto;
+    background-position:bottom center;
+}
