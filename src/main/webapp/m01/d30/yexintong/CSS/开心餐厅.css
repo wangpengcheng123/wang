@@ -1,0 +1,41 @@
+*{
+	margin: 0px 0px ;
+	padding: 0px 0px;
+}
+img{
+	width: 100%;
+	height: 100%;
+}
+#zhuti{
+	width: 80%;
+	height: auto;
+	margin: 0px auto;
+	padding: 10px 10px;
+	border: 1px red solid;
+	background-color: azure;
+}
+#top{
+	width: 600px;
+	height: 300px;
+}
+#bottom{
+	width: 80%;
+	height: auto;
+}
+.tubiao{
+	width:150px;
+	height: 50px;
+	margin: 10px 0px;
+}
+ol{
+	margin-left: 20px;
+}
+b{
+	color: blue;
+	font-family: 华文行楷;
+	font-size: 20px;
+	line-height: 50px;
+}
+p,li{
+	font-size: 10px;
+}
