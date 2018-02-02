@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		body{
+			margin: 0px;
+		}
+			#div1{
+				margin: 0px auto;
+				width: 312px;
+				height: 353px;
+				background-image:url(img/bg.jpg);
+				
+				position: relative;
+				
+			}
+			#div_2{
+				width: 260px;
+				margin-top: 65px ;
+				margin-left: 30px;
+				position:absolute;
+				color: white;
+			}
+			
+			input{
+				border-radius: 7px;
+				width: 190px;
+				margin-left: 10px;
+			}
+			#div_2 p #span1{
+				margin-right: 5px;
+				color: red;
+			}
+			#div_3{
+			
+				color: white;
+				
+				
+				position: absolute;
+				top:180px;
+				left: 43px;
+			}
+			#div_3 #p1{
+				margin: 20px 30px 20px 50px;
+				
+			}
+			#div_3 p select {
+				border-radius:5px;
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload=function(){
+				var oselectNode=document.getElementById("select1");
+				var olistNode=oselectNode.options;
+				for(var i=0;i<130;i++){
+					olistNode[i+1]=new Option(i+1,i+1);
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="div1">
+			<div id="div_2">
+			<p><span id="span1">*</span>姓名:<input type="text" name="username" value=""/></p>
+			<p><span id="span1">*</span>邮箱:<input type="email" name="username" value=""/></p>  
+			<p ><span id="span1">*</span>电话:<input type="text" name="username" value=""/></p>
+			</div>
+			<div id="div_3">
+			<p>	性别:<select>
+					<option>请选择</option>
+					<option>男</option>
+					<option>女</option>
+				</select></p>
+				<p>年龄:<select id="select1">
+					<option>请选择</option>
+					
+				</select></p>
+				<p id="p1"><img src="img/btn.jpg"></p>
+			</div>
+			
+		</div>
+	</body>
+</html>
