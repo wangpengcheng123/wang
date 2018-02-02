@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style type="text/css">
+#head {
+	background-image: url(img/bg.jpg);
+	height: 352px;
+	width: 312px;
+	background-repeat: no-repeat;
+}
+#head #body {
+	line-height: 38px;
+	color: #FFF;
+	padding-top: 60px;
+}
+ul{
+	list-style-type: none;
+	}
+#head #body ul li span {
+	color: #F00;
+}
+</style>
+<script>
+	window.onload=function(){
+		var old = document.getElementById("old");
+		var oo = old.options;
+		for(var i=1;i<=110;i++){
+			oo[i] = new Option(i,i)
+			}
+		}
+</script>
+</head>
+
+<body>
+<div id="head">
+	<div id="body">
+ 	 <ul>
+    	<li><span>*</span>姓名:<input type="text"/></li>
+        <li><span>*</span>姓名:<input type="text"/></li>
+        <li><span>*</span>姓名:<input type="text"/></li>
+        <li>性别:<select>
+        			<option/>请选择
+                    <option/>男
+                    <option/>女                    
+        		</select>
+                </li>
+        <li>
+        年龄:<select id="old">
+        		<option/>请选择
+	        </select>
+        </li>
+    </ul>
+    </div>
+  <center><input type="image" src="img/btn.jpg"/></center>
+</div>
+</body>
+</html>
