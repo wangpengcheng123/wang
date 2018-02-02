@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>体验登录界面</title>
+		<style type="text/css">
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			#zhuti {
+				width: 312px;
+				height: 283px;
+				margin: 0px auto;
+				background-image: url(image/bg.jpg);
+				padding-top: 70px;
+			}
+			
+			.bottom {
+				width: 312px;
+				height: auto;
+				margin: auto;
+			}
+			
+			.neirong {
+				margin: 20px 40px;
+			}
+			
+			span {
+				color: white;
+			}
+			
+			input {
+				margin-left: 10px;
+				border-radius: 5px;
+			}
+			
+			select {
+				margin-left: 10px;
+				border-radius: 5px;
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload = function() {
+				var sex = document.getElementById("sex");
+				var s = sex.options;
+				s[1] = new Option("男", 1);
+				s[2] = new Option("女", 2);
+				var year = document.getElementById("year");
+				var ye = year.options;
+				for(var i = 1; i < 121; i++) {
+					ye[i] = new Option(i, i);
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="zhuti">
+			<div class="bottom">
+				<div class="neirong">
+					<form method="post">
+						<span style="color: red;">*</span><span>姓名:</span>
+						<input type="text" pattern="[\u4e00-\u9fa5]+(·[\u4e00-\u9fa5]+)*" />
+				</div>
+				<div class="neirong">
+					<span style="color: red;">*</span><span>邮箱:</span>
+					<input type="email" />
+				</div>
+				<div class="neirong">
+					<span style="color: red;">*</span><span>电话:</span>
+					<input type="text" pattern="(1[3578]\d{9})"/>
+				</div>
+				<div class="neirong">
+					<span>性别:</span>
+					<select id="sex">
+						<option>--请选择--</option>
+					</select>
+				</div>
+				<div class="neirong">
+					<span>年龄:</span>
+					<select id="year">
+						<option>--请选择--</option>
+					</select>
+				</div>
+			</div>
+			<!--<img src="image/btn.jpg"/>-->
+			<input type="image" src="image/btn.jpg" style="margin: 0px 80px;" />
+			</from>
+		</div>
+	</body>
+
+</html>

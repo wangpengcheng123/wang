@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>中心动态列表</title>
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding: 0px;
+			}
+			#zhuti{
+				width: 250px;
+				margin: 0px auto;
+				border-radius: 20px 20px 20px 20px;
+				border: 1px solid darkgray;
+				background:linear-gradient(to bottom,#8BD3FA,white)
+			}
+			.top{
+				width: 240px;
+				height: 35px;
+				/*border: 1px solid darkgray;*/
+				border-radius: 20px 20px 0px 0px;
+				padding-top: 10px;
+				padding-left: 10px;
+			}
+			.top img{
+				vertical-align: middle;
+			}
+			img,span{
+				color: white;
+				font:normal bolder 15px "黑体";
+				vertical-align: middle;
+			}
+			.bottom{
+				width: 250px;
+				height: 235px;
+				/*border: 1px solid darkgray;*/
+				border-radius: 0px 0px 20px 20px;
+				background: url(image/dotBg.gif) repeat-y ;
+				ba
+			}
+			ul{
+				margin-top: 3px;
+			}
+			ul li{			
+				font: normal bolder 16px "宋体" ;
+				list-style-type: none;
+				line-height: 32px;
+				margin-left: 20px;
+			}
+			ul li a{
+				color: #62627A;
+				text-decoration: none;
+			}
+			ul li a:hover{
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="zhuti">
+			<div class="top">
+			<img src="image/bg.gif" />
+			<span>中心开班信息</span>
+		</div>
+		<hr  color="white"/>
+		<div class="bottom">
+			<ul>
+				<li><a href="#">8月12日：学历+技能班</a></li>
+				<li><a href="#">8月16日：高考特招班</a></li>
+				<li><a href="#">8月23日：Java精英班</a></li>
+				<li><a href="#">8月31日：学士后强化班</a></li>
+				<li><a href="#">9月5日：大学生就业班</a></li>
+				<li><a href="#">9月9日：企业定向委培班</a></li>
+				<li><a href="#">9月16日：网络营销强化班</a></li>
+			</ul>
+		</div>
+		</div>
+		
+	</body>
+</html>
