@@ -27,7 +27,7 @@ public class Queue {
       list.add("B");
       list.addLast("C");
       for(int i=0;i<list.size();i++){
-          System.out.println(list.get);
+          System.out.println(list);
       }
         
     }
