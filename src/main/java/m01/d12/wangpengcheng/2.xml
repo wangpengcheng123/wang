@@ -1,0 +1,43 @@
+﻿<?xml version="1.0"?>
+<school>
+<class id="1班学生">
+	<student >
+		<name>张三</name>
+		<age>20</age>
+		<gender>男</gender>
+	</student>
+	<student>
+		<name>小花</name>
+		<age>19</age>
+		<gender>女</gender>
+	</student>
+
+
+	<student>
+		<name>王五</name>
+		<age>25</age>
+		<gender>男</gender>
+	</student>
+
+</class>
+<class id="2班学生">
+	<student >
+		<name>张三2</name>
+		<age>20</age>
+		<gender>男</gender>
+	</student>
+	<student>
+		<name>小花2</name>
+		<age>19</age>
+		<gender>女</gender>
+	</student>
+
+
+	<student>
+		<name>王五2</name>
+		<age>25</age>
+		<gender>男</gender>
+	</student>
+
+</class>
+</school>

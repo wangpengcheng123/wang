@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="GBK"?>
+
+<Person> 
+  <bigren name="张三"> 
+    <yifu/> 
+  </bigren>  
+  <child name="李四"> 
+    <yifu/>  
+    <yifu/> 
+  </child>  
+  <Man name="王五"/>  
+  <Man name="王五"/>  
+  <Man name="王五"/> 
+</Person>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<school>
+	<class id="dt59">
+		<squad id="第一组">
+			<name1>胡朋</name1>
+			<name1>明星</name1>
+			<name1>李翔</name1>
+			<name1>罗娟</name1>
+			<name1>王浩炀</name1>
+			<name1>孙浩</name1>
+		</squad>
+		<squad id="第二组">
+			<name2>吴珍</name2>
+			<name2>刘朋</name2>
+			<name2>宋杭</name2>
+			<name2>高世庆</name2>
+			<name2>赌神</name2>
+		</squad>
+	</class>
+</school>
