@@ -6,7 +6,7 @@
  * Copyright (c) 2018, bluemobi All Rights Reserved.
  */
 
-pacm01.d27.lilin7tank;
+package m01.d27.lilin;
 /**
  * Description:   <br/>
  * Date:     2018��1��27�� ����2:20:56 <br/>
