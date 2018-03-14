@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		
+<title>百度注册页面</title>
+	<style type="text/css">
+		*{padding:0; margin:0;font-size:12px;
+    line-height:25px;}
+
+.register{
+    float:none;
+    width: 503px;
+    clear:both;
+    margin: 0px auto;
+}
+.register dl{clear: both;}
+.register dt{width:120px;
+    text-align:right;
+    padding-right:5px;
+    float: left;
+}
+.inputs {
+    border: 1px solid #333;
+    width:120px;
+    height: 20px;;
+}
+
+.register dl dd div{
+    color:#ff0000;
+    padding-left:5px;
+    display: inline;
+}
+.btn{width: 60px; text-align: center; height: 26px; margin: 5px 5px 0 0;}
+	</style>
+	<script type="text/javascript" src="js/jquery-1.8.3.js" ></script>
+	<script type="text/javascript">
+		$(function(){
+			function user(){
+				var reg=/^[a-zA-Z0-9_-]{3,16}$/;
+				var con=$("#user").val();
+				if(con==""||con==null){
+					$("#user").next().html("用户名不能为空")
+					return false;
+				}
+				if(!reg.test(con)){
+					$("#userId").html("用户名必须由字母、数字和下划线组成");
+					return false;
+				}
+				$("#userId").html("用户名正确".fontcolor("green"));
+				return true;
+			}
+		function pwd(){
+				var reg=/^[a-zA-Z]{6,12}$/;
+				var con=$("#pwd").val();
+				if(con==""||con==null){
+					$("#pwd").next().html("密码不能为空")
+					return false;
+				}
+				if(!reg.test(con)){
+					$("#pwd").next().html("密码长度在6-12个字符");
+					return false;
+				}
+				$("#pwd").next().html("密码正确".fontcolor("green"));
+				return true;
+			}
+			 function repwd(){
+				
+				var con=$("#repwd").val();
+				if($("#pwd").val()!=""){
+				if(con!=($("#pwd").val())){
+					$("#repwd").next().html("两次密码不一致");
+					return false;
+				}
+				$("#repwd").next().html("两次密码一致".fontcolor("green"));
+				return true;
+				}
+			}
+			function email(){
+				var reg=/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+				var con=$("#email").val();
+				if(con==""||con==null){
+					$("#email").next().html("电子邮件地址不能为空")
+					return false;
+				}
+				if(!reg.test(con)){
+					$("#email").next().html("密码长度在6-12个字符");
+					return false;
+				}
+				$("#email").next().html("密码正确".fontcolor("green"));
+				return true;
+			}	
+			$("#user").blur(user);
+			$("#pwd").blur(pwd);
+			$("#repwd").blur(repwd);
+			$("#email").blur(email);
+	
+			$("#myform").submit(function(){
+				var flag=true;
+				
+				$("input[name='sex']").each(function(index,domEle){
+					if($(domEle).attr("checked")){
+						flag=false;
+						
+					}
+				});
+				if(flag){
+					$("#sexId").html("请选择性别");
+					
+					return false;
+				}
+				if(!(user()&&pwd()&&repwd()&&email()))
+				return false;
+				
+				return true;
+			});
+			
+			
+			
+		});
+	</script>
+</head>
+
+<body>
+<div class="register">
+	<div class="center"><img src="images/header1.jpg" /></div>
+  <form action="success.html" method="get" id="myform">
+	  <dl>
+		  <dt>用户名：</dt>
+		  <dd><input id="user" type="text"  class="inputs"/><div id="userId"></div></dd>
+	  </dl>
+	  <dl>
+		  <dt>密码：</dt>
+		  <dd><input id="pwd" type="password"  class="inputs"/><div id="pwdId"></div></dd>
+	  </dl>
+	  <dl>
+		  <dt>确认密码：</dt>
+		  <dd><input id="repwd" type="password"  class="inputs"/><div id="repwdId"></div></dd>
+	  </dl>
+	  <dl>
+		  <dt>性别：</dt>
+		  <dd><input name="sex" type="radio" value="男" />男 <input name="sex" type="radio" value="女" />女
+			  <div id="sexId"></div></dd>
+	  </dl>
+	  <dl>
+		  <dt>电子邮件：</dt>
+		  <dd><input id="email" type="text"  class="inputs"/><div id="emailId"></div></dd>
+	  </dl>
+	  <dl>
+		  <dt>出生日期：</dt>
+		  <dd><select id="year">
+			  <script>
+				  for(var i=1900;i<=2015;i++){
+					  document.write("<option value="+i+">"+i+"</option>");
+				  }
+			  </script>
+		  </select>年
+			  <select id="month">
+				  <script>
+					  for(var i=1;i<=12;i++){
+						  document.write("<option value="+i+">"+i+"</option>");
+					  }
+				  </script>
+			  </select>月
+			  <select id="day">
+				  <script>
+					  for(var i=1;i<=31;i++){
+						  document.write("<option value="+i+">"+i+"</option>");
+					  }
+				  </script>
+			  </select>日</dd>
+	  </dl>
+	  <dl>
+		  <dt>&nbsp;</dt>
+		  <dd><input name="sub" type="submit" value="注册" class="btn" /> <input name="cancel" type="reset" value="清除"  class="btn"/></dd>
+	  </dl>
+  </form>
+</div>
+</body>
+</html>
