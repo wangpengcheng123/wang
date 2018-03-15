@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>百度注册页面</title>
+		<link href="css/reg.css" rel="stylesheet">
+		<script type="text/javascript" src="JavaScript/jquery-1.8.3.js"></script>
+		<script type="text/javascript">
+			window.onload = function() {
+				$("#user").blur(a);
+				$("#pwd").blur(b);
+				$("#repwd").blur(c);
+//				$("input[type=radio]").blur(g);
+				$("#email").blur(d);
+				$("#user").focus(q);
+				$("#pwd").focus(w);
+				$("#repwd").focus(e);
+//				$("input[type=radio]").focus(h);
+				$("#email").focus(r);
+				function a() {
+					var $userId = $("#userId");
+					if($("#user").val() == "") {
+						$userId.html("用户名不能为空！！");
+						return false;
+					} else {
+						var user1 = $("#user").val();
+						var user2 = /^[a-z0-9_-]{3,16}$/;
+						if(user2.test(user1) == false) {
+							$userId.html("用户名必须由字母、数字和下划线组成");
+						} else {
+							return true;
+						}
+					}
+				}
+
+				function b() {
+					var $pwdId = $("#pwdId");
+					if($("#pwd").val() == "") {
+						$pwdId.html("密码不能为空！！！");
+						return false;
+					} else {
+						var pwds = $("#pwd").val();
+						var repwds = /^[a-z0-9_-]{6,12}$/;
+						if(repwds.test(pwds) == false) {
+							$pwdId.html("密码长度为在6~12字符");
+							return false;
+						} else {
+							return true;
+						}
+					}
+				}
+
+				function c() {
+					var $repwdId = $("#repwdId");
+					if($("#repwd").val() == "") {
+						$repwdId.html("密码不能为空！！！")
+						return false;
+					} else {
+						if($("#pwd").val() != $("#repwd").val()) {
+							$repwdId.html("两次输入密码不一致");
+							return false;
+						} else {
+							return true;
+						}
+					}
+				}
+
+				function d() {
+					var $emailId = $("#emailId");
+					if($("#email").val() == "") {
+						$emailId.html("电子邮件不能为空！！！");
+						return false;
+					} else {
+						var email = $("#email").val();
+						var reemail = /^[a-z\d]+(\.[a-z\d]+)*@([\da-z](-[\da-z])?)+(\.{1,2}[a-z]+)+$/;
+						if(reemail.test(email) == false) {
+							$emailId.html("电子邮件格式有错误")
+							return false;
+						} else {
+							return true;
+						}
+					}
+				}
+//				function g(){
+//					var $gg=$("input[type=radio]");	
+//					if(!$gg.Checkbox()==false){
+//						alert("sss");
+//						return false;
+//					}
+//				}
+				function q(){
+					var $qq=$("#userId");	
+					$qq.html("");
+				}
+				function w(){
+					var $ww=$("#pwdId");
+					$ww.html("");
+				}
+				function e(){
+					var $ee=$("#repwdId");
+					$ee.html("");
+				}
+				function r(){
+					var $rr=$("#emailId");
+					$rr.html("");
+				}
+				$("form").submit(function() {
+					var f = true;
+					if(!a()) f = false;
+					if(!b()) f = false;
+					if(!c()) f = false;
+					if(!d()) f = false;
+//					if(!g()) f=false;
+					return f;
+				});
+			}
+		</script>
+	</head>
+
+	<body>
+		<div class="register">
+			<div class="center"><img src="images/header1.jpg" /></div>
+			<form action="success.html" method="get" id="myform">
+				<dl>
+					<dt>用户名：</dt>
+					<dd><input id="user" type="text" class="inputs" />
+						<div id="userId"></div>
+					</dd>
+				</dl>
+				<dl>
+					<dt>密码：</dt>
+					<dd><input id="pwd" type="password" class="inputs" />
+						<div id="pwdId"></div>
+					</dd>
+				</dl>
+				<dl>
+					<dt>确认密码：</dt>
+					<dd><input id="repwd" type="password" class="inputs" />
+						<div id="repwdId"></div>
+					</dd>
+				</dl>
+				<dl>
+					<dt>性别：</dt>
+					<dd><input name="sex" type="radio" value="男" />男 <input name="sex" type="radio" value="女" />女
+						<div id="sexId"></div>
+					</dd>
+				</dl>
+				<dl>
+					<dt>电子邮件：</dt>
+					<dd><input id="email" type="text" class="inputs" />
+						<div id="emailId"></div>
+					</dd>
+				</dl>
+				<dl>
+					<dt>出生日期：</dt>
+					<dd>
+						<select id="year">
+							<script>
+								for(var i = 1900; i <= 2015; i++) {
+									document.write("<option value=" + i + ">" + i + "</option>");
+								}
+							</script>
+						</select>年
+						<select id="month">
+							<script>
+								for(var i = 1; i <= 12; i++) {
+									document.write("<option value=" + i + ">" + i + "</option>");
+								}
+							</script>
+						</select>月
+						<select id="day">
+							<script>
+								for(var i = 1; i <= 31; i++) {
+									document.write("<option value=" + i + ">" + i + "</option>");
+								}
+							</script>
+						</select>日</dd>
+				</dl>
+				<dl>
+					<dt>&nbsp;</dt>
+					<dd><input name="sub" type="submit" value="注册" class="btn" /> <input name="cancel" type="reset" value="清除" class="btn" /></dd>
+				</dl>
+			</form>
+		</div>
+	</body>
+
+</html>
