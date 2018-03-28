@@ -2,14 +2,14 @@
  * Project Name:WE_JDBC
  * File Name:Province.java
  * Package Name:mydata
- * Date:2018дЙ3тб27хуобнГ4:11:15
+ * Date:2018О©╫О©╫3О©╫О©╫27О©╫О©╫О©╫О©╫О©╫О©╫4:11:15
  * Copyright (c) 2018, bluemobi All Rights Reserved.
  */
 
-package mydata;
+package m03.d27.Ф²▌Ф·≈;
 /**
  * Description:   <br/>
- * Date:     2018дЙ3тб27ху обнГ4:11:15 <br/>
+ * Date:     2018О©╫О©╫3О©╫О©╫27О©╫О©╫ О©╫О©╫О©╫О©╫4:11:15 <br/>
  * @author   11324
  * @version
  * @see

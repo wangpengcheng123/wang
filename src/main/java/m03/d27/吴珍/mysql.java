@@ -6,7 +6,7 @@
  * Copyright (c) 2018, bluemobi All Rights Reserved.
  */
 
-package jdbc;
+package m03.d27.吴珍;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

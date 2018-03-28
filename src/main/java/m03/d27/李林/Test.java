@@ -2,14 +2,14 @@
  * Project Name:WE_JDBC
  * File Name:Test.java
  * Package Name:mydata
- * Date:2018Äê3ÔÂ27ÈÕÏÂÎç4:11:32
+ * Date:2018ï¿½ï¿½3ï¿½ï¿½27ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4:11:32
  * Copyright (c) 2018, bluemobi All Rights Reserved.
  */
 
-package mydata;
+package m03.d27.ææ—;
 /**
  * Description:   <br/>
- * Date:     2018Äê3ÔÂ27ÈÕ ÏÂÎç4:11:32 <br/>
+ * Date:     2018ï¿½ï¿½3ï¿½ï¿½27ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½4:11:32 <br/>
  * @author   11324
  * @version
  * @see
@@ -42,15 +42,15 @@ public class Test {
           System.out.println(mp.get(pe).getCid()+"\t"+mp.get(pe).getCname()+"\t"+pe.getPname());
        }*/
     }
-        Connection con = null;//Í¨µÀ
-        PreparedStatement pst = null;//Ô¤±àÒë
-        ResultSet rs = null;//½á¹û¼¯
+        Connection con = null;//Í¨ï¿½ï¿½
+        PreparedStatement pst = null;//Ô¤ï¿½ï¿½ï¿½ï¿½
+        ResultSet rs = null;//ï¿½ï¿½ï¿½
         private String url = "jdbc:mysql://localhost:3306/mydata";
         
-        public Connection getCon(){//Íê³ÉÓëÊı¾İ¿âµÄÁ´½Ó
+        public Connection getCon(){//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½İ¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
             try {
-                Class.forName("com.mysql.jdbc.Driver");//¼ÓÔØÇı¶¯
-                con = DriverManager.getConnection(url, "root", "root");//ÊäÈëÃÜÂë£¬Íê³ÉÁ´½Ó
+                Class.forName("com.mysql.jdbc.Driver");//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+                con = DriverManager.getConnection(url, "root", "root");//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ë£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
             } catch (Exception e) {
                 e.printStackTrace();
             }

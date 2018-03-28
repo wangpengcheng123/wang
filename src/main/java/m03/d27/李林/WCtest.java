@@ -2,14 +2,14 @@
  * Project Name:WE_JDBC
  * File Name:WCtest.java
  * Package Name:mydata
- * Date:2018Äê3ÔÂ27ÈÕÏÂÎç5:57:47
+ * Date:2018ï¿½ï¿½3ï¿½ï¿½27ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½5:57:47
  * Copyright (c) 2018, bluemobi All Rights Reserved.
  */
 
-package mydata;
+package m03.d27.ææ—;
 /**
  * Description:   <br/>
- * Date:     2018Äê3ÔÂ27ÈÕ ÏÂÎç5:57:47 <br/>
+ * Date:     2018ï¿½ï¿½3ï¿½ï¿½27ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½5:57:47 <br/>
  * @author   11324
  * @version
  * @see

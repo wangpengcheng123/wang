@@ -2,14 +2,14 @@
  * Project Name:dt59.jdbc
  * File Name:InFo.java
  * Package Name:dt59.cangku
- * Date:2018-3-26обнГ4:27:56
+ * Date:2018-3-26О©╫О©╫О©╫О©╫4:27:56
  * Copyright (c) 2018, bluemobi All Rights Reserved.
  */
 
-package m03.d27;
+package m03.d27.Е▐╤Ф√╟Г╚╔;
 /**
  * Description:   <br/>
- * Date:     2018-3-26 обнГ4:27:56 <br/>
+ * Date:     2018-3-26 О©╫О©╫О©╫О©╫4:27:56 <br/>
  * @author   LangWang
  * @version
  * @see

@@ -2,11 +2,11 @@
  * Project Name:dt59.homework
  * File Name:TextDemo02.java
  * Package Name:m03.d27
- * Date:2018-3-27обнГ1:36:33
+ * Date:2018-3-27О©╫О©╫О©╫О©╫1:36:33
  * Copyright (c) 2018, bluemobi All Rights Reserved.
  */
 
-package m03.d27;
+package m03.d27.Е▐╤Ф√╟Г╚╔;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -17,7 +17,7 @@ import java.util.List;
 
 /**
  * Description:   <br/>
- * Date:     2018-3-27 обнГ1:36:33 <br/>
+ * Date:     2018-3-27 О©╫О©╫О©╫О©╫1:36:33 <br/>
  * @author   LangWang
  * @version
  * @see
