@@ -1,0 +1,38 @@
+CREATE TABLE sales
+(
+	empid INT,
+	proid INT,
+	num   FLOAT,
+	saDate DATETIME
+)
+INSERT INTO sales VALUES(1234,567890,33.5,'2004-12-21');
+INSERT INTO sales VALUES(1234,598701,44.8,'2004-11-21');
+INSERT INTO sales VALUES(1234,598701,45.2,'2004-10-01');
+INSERT INTO sales VALUES(1234,567890,66.5,'2004-9-21');
+INSERT INTO sales VALUES(3456,789065,22.5,'2004-10-01');
+INSERT INTO sales VALUES(3456,789065,77.5,'2004-10-27');
+INSERT INTO sales VALUES(3456,678901,48.5,'2004-12-21');
+
+#按月统计销售表中货物的销售量数
+SELECT empid AS NO,proid AS no2,
+SUM(CASE WHEN MONTH(saDate)=9 THEN num ELSE num=0 END) AS 9月,
+SUM(CASE WHEN MONTH(saDate)=10 THEN num ELSE num=0 END) AS 10月,
+SUM(CASE WHEN MONTH(saDate)=11 THEN num ELSE num=0 END) AS 11月,
+SUM(CASE WHEN MONTH(saDate)=12 THEN num ELSE num=0 END) AS 12月
+FROM sales
+GROUP BY proid,empid;
+
+
+#P128 第4题用存储过来做！
+DELIMITER ;;
+CREATE PROCEDURE bbxx()
+BEGIN
+	UPDATE borrow SET returndate = NOW() WHERE rid = '0008';
+	UPDATE book SET bcount = bcount+1 WHERE bid = (SELECT bid FROM penalty WHERE rid='0008');
+	UPDATE reader SET lennum = lennum-1 WHERE rid = '0008';
+END
+;;
+DELIMITER ;
+
+
+CALL bbxx;
