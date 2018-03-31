@@ -10,10 +10,10 @@ package m03.d30.yexintong.demo;
 
 import java.util.Scanner;
 
-import m03.d28.yexintong.cangku.Info;
-import m03.d28.yexintong.dao.BizDao;
-import m03.d28.yexintong.dao.BizDaoImpal;
-import m03.d28.yexintong.dao.DemoFengZhuang;
+import m03.d30.yexintong.cangku.Info;
+import m03.d30.yexintong.dao.BizDao;
+import m03.d30.yexintong.dao.BizDaoImpal;
+import m03.d30.yexintong.dao.DemoFengZhuang;
 
 /**
  * Description:   <br/>

@@ -10,7 +10,7 @@ package m03.d30.yexintong.dao;
 
 import java.util.List;
 
-import m03.d28.yexintong.cangku.Info;
+import m03.d30.yexintong.cangku.Info;
 
 /**
  * Description:   <br/>
