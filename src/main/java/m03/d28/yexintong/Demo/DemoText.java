@@ -6,7 +6,7 @@
  * Copyright (c) 2018, bluemobi All Rights Reserved.
  */
 
-package m03.d30.yexintong.demo;
+package m03.d28.yexintong.Demo;
 
 import java.util.Scanner;
 
