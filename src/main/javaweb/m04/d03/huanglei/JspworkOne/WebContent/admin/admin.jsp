@@ -1,6 +1,6 @@
 <%@page import="com.xin.entity.NewsInfo"%>
 <%@page import="java.util.*"%>
-<%@page import="com.xin.service.impl.BizServicerImpl"%>
+<%@page import="com.xin.com.xin.service.impl.BizServicerImpl"%>
 <%@page import="org.apache.jasper.tagplugins.jstl.core.ForEach"%>
 <%@page import="com.xin.dao.impl.BizDaoImpl"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"

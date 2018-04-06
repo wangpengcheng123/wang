@@ -10,7 +10,7 @@
 <body>
 <%
  //request.setCharacterEncoding("utf-8");
- String name=request.getParameter("uname");
+ String name=request.getParameter("username");
  String psw=request.getParameter("upwd");
  UserInfo ui=new UserInfo();
  ui.setName(name);
