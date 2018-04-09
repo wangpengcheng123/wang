@@ -9,6 +9,7 @@ import java.sql.ResultSet;
 import java.util.Properties;
 
 import javax.naming.Context;
+import javax.naming.InitialContext;
 import javax.sql.DataSource;
 
 public class BaseDao {
@@ -48,7 +49,8 @@ public class BaseDao {
 		try {
 //			Class.forName(driver);
 //			con= DriverManager.getConnection(url, username, userpwd);
-		    ds= (DataSource) context.lookup("java:/comp/env/second");
+		    Context ctx=new InitialContext();
+		    ds= (DataSource) ctx.lookup("java:/comp/env/second");
             con=ds.getConnection();
 		} catch (Exception e) {
 			// TODO: handle exception
