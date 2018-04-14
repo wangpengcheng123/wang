@@ -42,4 +42,14 @@
     <servlet-name>FenYeServlet</servlet-name>
     <url-pattern>/fenye</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UserManager</display-name>
+    <servlet-name>UserManager</servlet-name>
+    <servlet-class>pinhong.servlet.UserManager</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserManager</servlet-name>
+    <url-pattern>/usermanager</url-pattern>
+  </servlet-mapping>
 </web-app>

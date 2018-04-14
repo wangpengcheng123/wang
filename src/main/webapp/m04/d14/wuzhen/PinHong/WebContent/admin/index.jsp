@@ -24,7 +24,7 @@ function mfk()
 			cellpadding="0" cellspacing="0">
 			<tr>
 				<td id='shang' width="162" height="100%">
-					<iframe frameBorder="0" id="left" name="left" src="left.jsp"
+					<iframe frameBorder="0" id="left" name="left" src="admin/left.jsp"
 						height="100%" width="162" >
 					</iframe>
 				</td>

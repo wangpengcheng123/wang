@@ -38,6 +38,7 @@ public class LoginServlet extends HttpServlet {
 		request.setCharacterEncoding("utf-8");
 		String user=request.getParameter("userName");
 		String pwd=request.getParameter("password");
+		
 		BizDaoImp bdi=new BizDaoImp();
 		User u=new User();
 		u.setUname(user);
@@ -48,7 +49,7 @@ public class LoginServlet extends HttpServlet {
 		    List<User> listUser= bdi.getAllUser();
 		    session.setAttribute("loginUser", user);
 		    session.setAttribute("listUser", listUser); 		   
-		    request.getRequestDispatcher("admin/left.jsp").forward(request,response);
+		    request.getRequestDispatcher("admin/index.jsp").forward(request,response);
 		}else{
 		    response.sendRedirect("Jsp_Proscenium/Login.jsp");
 		}

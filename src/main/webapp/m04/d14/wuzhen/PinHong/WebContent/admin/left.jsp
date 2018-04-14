@@ -97,7 +97,7 @@ window.onerror = killErrors;
 							&nbsp;&nbsp;
 							<img border="0" src="<%=path %>/image/icon_arrow_r.gif" width="13"
 								height="13">
-							<a class="menu" target="main" href="admin/showUserList.jsp">用户管理&nbsp;&nbsp;</a>
+							<a class="menu" target="main" href="showUserList.jsp">用户管理&nbsp;&nbsp;</a>
 						</TD>
 					</TR>
 				</table> </span>

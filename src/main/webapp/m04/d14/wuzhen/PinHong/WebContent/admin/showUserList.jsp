@@ -9,6 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="../css/style_admin.css">
 </head>
 <body>
+
 		<table cellspacing="1" cellpadding="4" width="100%" class="tableborder" id="table3" align="center">
 			<!-- <form name="form1" action="showUserList.jsp" method="post"> -->
 			<tr>
@@ -52,7 +53,7 @@
 			
 			</c:forEach>
 			</c:if>
-			<!-- </form> -->
 		</table>
+	
 </body>
 </html>
