@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="Demo_dt59_pinhong"
+  id="myeclipse.1523529235605"
+  context-root="/Demo_dt59_pinhong"
+  j2ee-spec="5.0"
+  archive="Demo_dt59_pinhong.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
