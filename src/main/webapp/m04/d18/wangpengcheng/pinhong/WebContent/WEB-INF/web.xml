@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>contextDemo</display-name>
+  <welcome-file-list>
+    <welcome-file>servlet/IndexServlet</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <filter>
+    <filter-name>EncodingFilter</filter-name>
+    <filter-class>com.java.filterss.EncodingFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>EncodingFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <filter>
+    <filter-name>ServletFilter</filter-name>
+    <filter-class>com.java.filterss.ServletFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>ServletFilter</filter-name>
+    <url-pattern>/pages/front/banji.jsp</url-pattern>
+    <url-pattern>/pages/front/insert_class.jsp</url-pattern>
+    <url-pattern>/pages/front/insert_student.jsp</url-pattern>
+    <url-pattern>/pages/front/select_class.jsp</url-pattern>
+    <url-pattern>/pages/front/student.jsp</url-pattern>
+    <url-pattern>/pages/front/update_class.jsp</url-pattern>
+    <url-pattern>/pages/front/update_student.jsp</url-pattern>
+  </filter-mapping>
+  <context-param>
+    <param-name>encoding</param-name>
+    <param-value>utf-8</param-value>
+  </context-param>
+  <servlet>
+    <servlet-name>AjaxServlet</servlet-name>
+    <servlet-class>com.java.servlet.AjaxServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AjaxServlet</servlet-name>
+    <url-pattern>/servlet/AjaxServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
