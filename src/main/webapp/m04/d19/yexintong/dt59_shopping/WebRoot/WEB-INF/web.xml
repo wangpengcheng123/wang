@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name></display-name>
+  <servlet>
+    <servlet-name>ShangPiangServlet</servlet-name>
+    <servlet-class>com.shopping.servlet.ShangPiangServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DengLuServlet</servlet-name>
+    <servlet-class>com.shopping.servlet.DengLuServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddShangpingServlet</servlet-name>
+    <servlet-class>com.shopping.servlet.AddShangpingServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>InToServlet</servlet-name>
+    <servlet-class>com.shopping.servlet.InToServlet</servlet-class>
+  </servlet>
+
+
+
+  
+	<filter>
+		<filter-name>setC</filter-name>
+		<filter-class>com.shopping.setChar.SetChar</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>setC</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+  <servlet-mapping>
+    <servlet-name>ShangPiangServlet</servlet-name>
+    <url-pattern>/inti</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DengLuServlet</servlet-name>
+    <url-pattern>/denglu</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddShangpingServlet</servlet-name>
+    <url-pattern>/addServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InToServlet</servlet-name>
+    <url-pattern>/Into</url-pattern>
+  </servlet-mapping>	
+  <welcome-file-list>
+    <welcome-file>inti</welcome-file>
+  </welcome-file-list>
+</web-app>
