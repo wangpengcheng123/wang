@@ -37,17 +37,17 @@
 			
 			}
 		 }
-		 var jf=document.getElementsByName("jf");
-		 for(var i=0;i<jf.length;i++){
-			jf[i].onclick=function(){
+		 var jfs=document.getElementsByName("jfs");
+		 for(var i=0;i<jfs.length;i++){
+			jfs[i].onclick=function(){
 				jff();
-				var jf=parseInt(this.parentNode.children[1].value);
-				jf--;
-				if(jf<=0){
-					jf=1;
+				var jfs=parseInt(this.parentNode.children[1].value);
+				jfs--;
+				if(jfs<=0){
+					jfs=1;
 				}
 				 
-				this.parentNode.children[1].value=jf;
+				this.parentNode.children[1].value=jfs;
 				
 			}
 		 }
@@ -77,8 +77,8 @@
 				xmlHttp.onreadystatechange = function() {
 					if (xmlHttp.readyState == 4) {
 						var zongjias=xmlHttp.responseText;
-					//	document.getElementById("zongjia").value=zongjias;
-						
+						document.getElementById("zongjia").value=zongs;
+						//alert(zongs);
 					}
 				}
 				var num=document.getElementById("num").value;
@@ -115,8 +115,8 @@
 				xmlHttp.onreadystatechange = function() {
 					if (xmlHttp.readyState == 4) {
 						var zongs=xmlHttp.responseText;
-						//document.getElementById("zongjia").value=zongs;
-						
+						document.getElementById("zongjia").value=zongs;
+					
 					}
 				}
 				var num=document.getElementById("num").value;
@@ -149,7 +149,7 @@
 				<tr>
 					<td>${ap.value.spid }</td>
 					<td>${ap.value.spname }</td>
-					<td><a href="javascript:;" name="jf" >-</a><input
+					<td><a href="javascript:;" name="jfs" >-</a><input
 						type="text" width="50px" readonly="readonly"
 						value="${ap.value.num }" id="num"><a href="javascript:;"
 						name="add" >+</a></td>

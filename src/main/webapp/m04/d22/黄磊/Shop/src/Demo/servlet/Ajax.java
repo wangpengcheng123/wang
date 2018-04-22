@@ -37,7 +37,7 @@ public class Ajax extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-	System.out.println("Ajax");
+	//System.out.println("Ajax");
 	   String num=request.getParameter("num");
        String jf=request.getParameter("jf");
        String danjia=request.getParameter("danjia");
@@ -46,28 +46,22 @@ public class Ajax extends HttpServlet {
        int jfs=Integer.valueOf(jf);
        float danjias=Float.parseFloat(danjia);
        float zongjias=Float.parseFloat(zongjia);
-     System.out.println(nums+"-----"+jfs+"-----"+danjias+"-----"+zongjias);
-	    if(jfs==1){
+    // System.out.println(nums+"-----"+jfs+"-----"+danjias+"-----"+zongjias);
+     String str=null;
+  //   System.out.println(jfs);
+     if(jfs==1){
            nums=nums-1;
            zongjias=nums*danjias;
-         
-	       System.out.println("减法："+zongjias);
-	    
-
-	    } 
-	    if(jfs==2){
+            str=String.valueOf(zongjias);
+	    } else if(jfs==2){
 	           nums=nums+1;
 	           zongjias=nums*danjias;
-	          
-	           System.out.println("加法："+zongjias);
-	        
-
-	        } 
-
+	          str=String.valueOf(zongjias);
+                } 
 
 	    response.setContentType("text/html");
 	    PrintWriter out=response.getWriter();
-	   out.write((int) zongjias);
+	   out.write(str);
 	    out.flush();
 	    out.close();
 	    
